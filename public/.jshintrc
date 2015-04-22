@@ -1,6 +1,7 @@
 {
   "strict" : true,
 	"node" : true,
+	"browser" : false,
 	
   "globals": {
     "describe" : false,
@@ -11,6 +12,9 @@
     "jQuery" : false,
 		"document" : false,
 		"window" : false,
-		"HTMLElement" : false
+		"HTMLElement" : false,
+		"Promise" : false,
+		"promisedFriends" : false,
+		"fetch" : false
   }
 }
