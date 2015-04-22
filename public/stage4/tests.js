@@ -24,9 +24,9 @@ describe('ステージ4（意図通りにイベントを利用できる）', fun
       //
       // ここに上記のどちらかのコードを記述してください。
       var element = document.querySelector('#firebrick');
-      element.onclick = function() {
+      element.addEventListener('click', function() {
         element.textContent = Number(element.textContent) + 1;
-      };
+      });
 
       var firebrick = document.getElementById('firebrick');
       firebrick.dispatchEvent(createClickEvent());
@@ -41,10 +41,9 @@ describe('ステージ4（意図通りにイベントを利用できる）', fun
 
       // ここにコードを記述してください。
       var element = document.querySelector('#chocolate');
-      element.onclick = function() {
+      element.addEventListener('click', function() {
         element.textContent = Number(element.textContent) - 1;
-      };
-
+      });
 
       var chocolate = document.getElementById('chocolate');
       chocolate.dispatchEvent(createClickEvent());
@@ -60,10 +59,10 @@ describe('ステージ4（意図通りにイベントを利用できる）', fun
       // ここにコードを記述してください。
       var element = document.querySelector('.mediumseagreen');
       var angle = 0;
-      element.onclick = function() {
+      element.addEventListener('click', function() {
         angle += 10;
         element.style.transform = 'rotate(' + angle + 'deg)';
-      };
+      });
 
       var mediumseagreen = document.querySelector('.mediumseagreen');
       mediumseagreen.dispatchEvent(createClickEvent());
@@ -81,10 +80,10 @@ describe('ステージ4（意図通りにイベントを利用できる）', fun
       // ここにコードを記述してください。
       var element = document.querySelector('.turquoise');
       var input = document.querySelector('input');
-      input.onchange = function() {
+      element.addEventListener('change', function() {
         var angle = input.value;
         element.style.transform = 'rotate(' + angle + 'deg)';
-      };
+      });
 
 
       var turquoise = document.querySelector('.turquoise');
@@ -111,7 +110,7 @@ describe('ステージ4（意図通りにイベントを利用できる）', fun
       // なお、expect(steelblue).to.be.null は上記のテストの要件を満たして
       // いないので、正解ではありません。
 
-      $(window).ready(function() {
+      window.addEventListener('DOMContentLoaded', function() {
         var steelblue = document.querySelector('.steelblue');
         expect(steelblue).to.have.property('textContent', '5 \uD83D\uDC33');
       });
