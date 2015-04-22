@@ -1,0 +1,16 @@
+{
+  "strict" : true,
+	"node" : true,
+	
+  "globals": {
+    "describe" : false,
+    "it" : false,
+    "before" : false,
+		"expect" : false,
+		"$" : false,
+    "jQuery" : false,
+		"document" : false,
+		"window" : false,
+		"HTMLElement" : false
+  }
+}
