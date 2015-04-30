@@ -1,0 +1,19 @@
+{
+  "name": "sample",
+  "version": "0.0.0",
+  "homepage": "https://github.com/cagayakemiracl/JavaScriptTraining",
+  "authors": [
+    "cagayakemiracl <hirosnonno1182@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Buttons": "~2.0.0"
+  }
+}
