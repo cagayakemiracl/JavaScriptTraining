@@ -159,7 +159,6 @@ describe('ステージ7（よくあるJSのイディオムを読める）', func
 
 
 describe('あなたの闇のJS力', function() {
-  'use strict';
   // .skip を外せば始められます
 
   describe('ゆるふわ == 演算子', function() {
